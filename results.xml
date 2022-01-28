@@ -1,0 +1,29 @@
+<testsuites id="" name="" tests="3" failures="0" skipped="0" errors="0" time="5.653">
+<testsuite name="PlayWrightExample.spec.js" timestamp="1642373192921" hostname="" tests="1" failures="0" skipped="0" time="3.122" errors="0">
+<testcase name="basic test" classname="[chromium] › PlayWrightExample.spec.js:2:1 › basic test" time="3.122">
+<system-out>
+
+[[ATTACHMENT|test-results\PlayWrightExample-basic-test-chromium\4d3894382014bd47cf69be26ac67b466.webm]]
+
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="PlayWrightExample.spec.js" timestamp="1642373192921" hostname="" tests="1" failures="0" skipped="0" time="3.423" errors="0">
+<testcase name="basic test" classname="[firefox] › PlayWrightExample.spec.js:2:1 › basic test" time="3.423">
+<system-out>
+
+[[ATTACHMENT|test-results\PlayWrightExample-basic-test-firefox\699c0efe-efb8-4951-8b92-b2710eed9960.webm]]
+
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="PlayWrightExample.spec.js" timestamp="1642373192921" hostname="" tests="1" failures="0" skipped="0" time="3.117" errors="0">
+<testcase name="basic test" classname="[edge] › PlayWrightExample.spec.js:2:1 › basic test" time="3.117">
+<system-out>
+
+[[ATTACHMENT|test-results\PlayWrightExample-basic-test-edge\7cab657372608d6999f8c2e63a3137c9.webm]]
+
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>
