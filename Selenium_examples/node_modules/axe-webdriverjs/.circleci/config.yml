@@ -1,0 +1,93 @@
+version: 2
+
+defaults: &defaults
+  docker:
+    - image: circleci/node:10-browsers
+  working_directory: ~/axe-webdriverjs
+
+jobs:
+  dependencies:
+    <<: *defaults
+    steps:
+      - checkout
+      - restore_cache:
+          key: v2-npm-cache-{{ checksum "package.json" }}
+      - run: npm install
+      - save_cache:
+          key: v2-npm-cache-{{ checksum "package.json" }}
+          paths:
+            - node_modules
+  test:
+    <<: *defaults
+    steps:
+      - checkout
+      - restore_cache:
+          key: v2-npm-cache-{{ checksum "package.json" }}
+      - run: npm run test
+  lint:
+    <<: *defaults
+    steps:
+      - checkout
+      - restore_cache:
+          key: v2-npm-cache-{{ checksum "package.json" }}
+      - run: npm run lint
+  canary_release:
+    <<: *defaults
+    steps:
+      - checkout
+      - restore_cache:
+          key: v2-npm-cache-{{ checksum "package.json" }}
+      - run: .circleci/canary-release.js
+      - run: npm config set "//registry.npmjs.org/:_authToken" $NPM_AUTH
+      - run: npm publish --tag=next
+  release:
+    <<: *defaults
+    steps:
+      - checkout
+      - restore_cache:
+          key: v2-npm-cache-{{ checksum "package.json" }}
+      - run: npm config set "//registry.npmjs.org/:_authToken" $NPM_AUTH
+      - run: npm publish
+  github_release:
+    docker:
+      - image: circleci/golang:1.8
+    steps:
+      - checkout
+      - run: go get gopkg.in/aktau/github-release.v0
+      - run:
+          name: Download and run GitHub release script
+          command: |
+            curl https://raw.githubusercontent.com/dequelabs/attest-release-scripts/develop/src/node-github-release.sh -s -o ./node-github-release.sh
+            chmod +x ./node-github-release.sh
+            ./node-github-release.sh
+
+workflows:
+  version: 2
+  build:
+    jobs:
+      - dependencies
+      - test:
+          requires:
+            - dependencies
+      - lint:
+          requires:
+            - dependencies
+      - canary_release:
+          requires:
+            - dependencies
+            - test
+            - lint
+          filters:
+            branches:
+              only: develop
+      - release:
+          requires:
+            - dependencies
+            - test
+            - lint
+          filters:
+            branches:
+              only: master
+      - github_release:
+          requires:
+            - release
