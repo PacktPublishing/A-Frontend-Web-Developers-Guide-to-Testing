@@ -15,7 +15,8 @@ This book covers the following exciting features: <First 5 What you'll learn poi
 *  Advance test automation for your web app with sophisticated capabilities
 * Measure both code coverage and test coverage to assess your web application quality
 * Measure the success and maturity of web application quality
-* If you feel this book is for you, get your [copy](https://www.amazon.com/dp/10DigitISBN) today!
+* 
+ If you feel this book is for you, get your [copy](https://www.amazon.com/dp/1803238313) today!
 
 <a href="https://www.packtpub.com/?utm_source=github&utm_medium=banner&utm_campaign=GitHubBanner"><img src="https://raw.githubusercontent.com/PacktPublishing/GitHub/master/GitHub.png" 
 alt="https://www.packtpub.com/" border="5" /></a>
