@@ -1,7 +1,3 @@
-## [Get this title for $10 on Packt's Spring Sale](https://www.packt.com/B18365?utm_source=github&utm_medium=packt-github-repo&utm_campaign=spring_10_dollar_2022)
------
-For a limited period, all eBooks and Videos are only $10. All the practical content you need \- by developers, for developers
-
 # A Frontend Web Developer’s Guide to Testing
 
 <a href="https://www.packtpub.com/product/a-front-end-web-developer-s-guide-to-testing/9781803238319"><img src="https://static.packt-cdn.com/products/9781803238319/cover/smaller" alt="A Front-End Web Developer’s Guide to Testing" height="256px" align="right"></a>
