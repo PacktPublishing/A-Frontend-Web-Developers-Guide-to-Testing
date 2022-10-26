@@ -64,3 +64,7 @@ is a bestselling author and the Chief Evangelist and Senior Director at Perforce
 Along with over 21 years of experience in development and testing at companies such as Sun Microsystems, Neustar, Texas Instruments, and General Electric, Eran holds various industry certifications such as ISTQB and CMMI.
 Eran is a recognized influencer on continuous testing and DevOps thought leadership, an international speaker, blogger, and a patent-holding inventor (test exclusion automated mechanisms for mobile J2ME testing). Eran is active in the community and has his own blog.
 
+### Download a free PDF
+
+ <i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to claim your free PDF.</i>
+<p align="center"> <a href="https://packt.link/free-ebook/9781803238319">https://packt.link/free-ebook/9781803238319 </a> </p>
