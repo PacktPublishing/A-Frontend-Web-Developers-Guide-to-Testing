@@ -1,3 +1,15 @@
+
+### Get this product for $5
+
+<i>Packt is having its biggest sale of the year. Get this eBook or any other book, video, or course that you like just for $5 each</i>
+
+
+<b><p align='center'>[Buy now](https://packt.link/9781803238319)</p></b>
+
+
+<b><p align='center'>[Buy similar titles for just $5](https://subscription.packtpub.com/search)</p></b>
+
+
 # A Frontend Web Developer’s Guide to Testing
 
 <a href="https://www.packtpub.com/product/a-front-end-web-developer-s-guide-to-testing/9781803238319"><img src="https://static.packt-cdn.com/products/9781803238319/cover/smaller" alt="A Front-End Web Developer’s Guide to Testing" height="256px" align="right"></a>
